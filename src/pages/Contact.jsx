@@ -21,7 +21,7 @@ function Contact() {
         <div style={{ overflow: "hidden",position:"relative",...mysettings}}>
             <div className='reveal contact-main-container'>
                 <div style={{fontSize:"2em"}}>
-                    <h1>Contact Details</h1>
+                    <h1 style={{textAlign:"center"}}>Contact Details</h1>
                 </div>
                 <div>
                    +91 8830484937 
