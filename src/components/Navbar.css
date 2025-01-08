@@ -1,0 +1,47 @@
+.navbar-main-container{
+    position: sticky;
+    top: 0em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding:1em 0em;
+    user-select: none;
+    z-index: 10;
+}
+
+.sub-container{
+    padding: 1.5em 0em;
+    width: 80%;
+    border-radius:0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    position: relative;
+    @media (max-width:700px) {
+        width: 95%;
+        box-shadow: none !important;
+    }
+}
+
+
+.nav-element{
+    font-weight: 700;
+    transition: color 200ms ease-in-out;
+}
+
+.name{
+    background: linear-gradient(to right, #f32170, #ff6b08,#cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+}
+.current{
+    color: rgb(119, 0, 255);
+    font-weight:700;
+}

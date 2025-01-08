@@ -1,0 +1,11 @@
+*{
+    font-family: "Poppins";
+    margin: 0;
+    padding: 0;
+    transition: color 100ms ease-in-out;
+}
+
+* ::-webkit-scrollbar{
+    display: none;
+}
+

@@ -1,0 +1,36 @@
+.home-main-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width:1030px) {
+        flex-direction: column;
+    }
+}
+
+.human-img{
+    height: 25em;
+    @media (max-width:650px) {
+        height: 15em;
+    }
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(300px);
+    opacity: 1;
+    transition: transform 1s ease;
+}
+
+.reveal.active{
+    position: relative;
+    transform: translateY(0px);
+    opacity: 1;
+}

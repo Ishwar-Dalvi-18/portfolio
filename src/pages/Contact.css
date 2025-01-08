@@ -1,0 +1,17 @@
+.contact-main-container{
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.item{
+    margin:0.2em 0em;
+}
+.item:hover{
+    color: rgb(29, 192, 0);
+    font-weight: 500;
+}

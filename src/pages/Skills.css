@@ -1,0 +1,46 @@
+.skills-main-container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0em;
+    /* black theme */
+    /* background-color: rgb(21, 21, 21); */
+    /* white theme */
+    /* background-color: rgb(231, 231, 231); */
+}
+
+.skill {
+    display: grid;
+    column-gap: 1em;
+    row-gap: 1em;
+    padding: 0em 0.2em;
+}
+
+.description{
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.description>div{
+    padding:0em 0.2em;
+    @media (min-width:500px) {
+        padding: 0em 5em;
+    }
+}
+.description>div>p{
+    text-align: center;
+}
+
+.technical-skill {
+    background: linear-gradient(90deg, #21b600 0%, #008fff 40%, #ff0066 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+}
