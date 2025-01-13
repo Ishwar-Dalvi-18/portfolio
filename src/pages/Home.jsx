@@ -19,6 +19,7 @@ function Home({nav_ref,setNavigation}) {
         }
         if(firstLoad){
             window.addEventListener("scroll",()=>{
+                
                const reveals = document.querySelectorAll(".reveal");
                for(let i=0;i<reveals.length;i++){
                 const windowheight = window.innerHeight;
@@ -83,7 +84,13 @@ function Home({nav_ref,setNavigation}) {
         }
     }, [settings])
     return (
-        <div style={{display:"flex" , flexDirection:"column", overflow:"auto" }}>
+        <div onClick={e=>{
+                if(document.documentElement.requestFullscreen){
+                    const el = document.documentElement
+                    const rfs = el.requestFullscreen;
+                    rfs.call(el)  
+                  }
+        }} style={{display:"flex" , flexDirection:"column", overflow:"auto" }}>
             <div style={home_settings} className='home-main-container'>
                 <div style={{ overflow: "hidden" }} >
                     <img className='human-img' src={human_img} alt="img" />

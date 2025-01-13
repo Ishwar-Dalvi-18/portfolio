@@ -9,7 +9,7 @@ export const settingsContext = createContext({
 
 const SettingsContext = ({ children }) => {
     const [settings, setSettings] = useState({
-        theme: "black"
+        theme: "white"
     })
     return (
         <>
